@@ -67,7 +67,7 @@ const blogNav = document.querySelector('#blog-nav');
 const topOfBlogNav = blogNav.offsetTop;
 
 function fixBlogNav() {
-    if(window.scrollY >= topOfBlogNav - (heightOfMainNav*5)) {
+    if(window.scrollY >= topOfBlogNav - (heightOfMainNav*6)) {
         document.body.classList.add('fixed-blogNav');
         document.getElementById("blog-nav").style.marginTop = `${heightOfMainNav*4}px`;
     } else {
@@ -83,7 +83,7 @@ const contactNav = document.querySelector('#contact-nav');
 const topOfContactNav = contactNav.offsetTop;
 
 function fixContactNav() {
-    if(window.scrollY >= topOfContactNav - (heightOfMainNav*5)) {
+    if(window.scrollY >= topOfContactNav - (heightOfMainNav*7)) {
         document.body.classList.add('fixed-contactNav');
         document.getElementById("contact-nav").style.marginTop = `${heightOfMainNav*5}px`;
     } else {
