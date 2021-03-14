@@ -1,67 +1,95 @@
-// main nav //
+// main nav
 const mainNav = document.querySelector('#main-nav'); 
 const topOfMainNav = mainNav.offsetTop;
-
-    function fixMainNav() {
-        if(window.scrollY >= topOfMainNav) {
-            document.body.style.paddingTop = topOfMainNav + 'px';
-            document.body.classList.add('fixed-mainNav');
-        } else {
-            document.body.style.paddingTop = 0;
-            document.body.classList.remove('fixed-mainNav');
-        }
-        console.log("top of main nav:", topOfMainNav);
-    }
-
-    window.addEventListener('scroll', fixMainNav);
-
-// about nav //
-const aboutNav = document.querySelector('#about-nav');
-const topOfAboutNav = aboutNav.offsetTop;
 const heightOfMainNav = mainNav.offsetHeight;
 
-    function fixAboutNav() {
-        if(window.scrollY >= topOfAboutNav - (heightOfMainNav*2)) {
-            document.body.classList.add('fixed-aboutNav');
-            document.getElementById("about-nav").style.marginTop = `${heightOfMainNav}px`;
-        } else {
-            document.body.style.paddingTop = 0;
-            document.body.classList.remove('fixed-aboutNav');
-            document.getElementById("about-nav").style.marginTop = 0;
-        }
+function fixMainNav() {
+    if(window.scrollY >= topOfMainNav) {
+        document.body.style.paddingTop = heightOfMainNav + 'px';
+        document.body.classList.add('fixed-mainNav');
+    } else {
+        document.body.style.paddingTop = 0;
+        document.body.classList.remove('fixed-mainNav');
     }
-    window.addEventListener('scroll', fixAboutNav);
+}
+window.addEventListener('scroll', fixMainNav);
 
-// // cv nav //
-// const cvNav = document.querySelector('#cv-nav');
-// const topOfCvNav = cvNav.offsetTop;
+//about nav
+const aboutNav = document.querySelector('#about-nav'); 
+const topOfAboutNav = aboutNav.offsetTop;
 
-//     function fixCvNav() {
-//         if(window.scrollY >= topOfCvNav - (heightOfMainNav*2)) {
-//             document.body.classList.add('fixed-cvNav');
-//             document.getElementById("cv-nav").style.marginTop = `${heightOfMainNav*2}px`;
-//             document.getElementById("cv-nav-title").style.paddingLeft = '0';
-//         } else {
-//             document.body.classList.remove('fixed-cvNav');
-//             document.getElementById("cv-nav").style.marginTop = 0;
-//             document.getElementById("cv-nav-title").style.paddingLeft = 0;
-//         }
-//     }
-//     window.addEventListener('scroll', fixCvNav);
+function fixAboutNav() {
+    if(window.scrollY >= topOfAboutNav - (heightOfMainNav*2)) {
+        document.body.classList.add('fixed-aboutNav');
+        document.getElementById("about-nav").style.marginTop = `${heightOfMainNav}px`;
+    } else {
+        document.body.style.paddingTop = 0;
+        document.body.classList.remove('fixed-aboutNav');
+        document.getElementById("about-nav").style.marginTop = 0;
+    }
+}
+window.addEventListener('scroll', fixAboutNav);
 
-// // portfolio nav //
-// const portfolioNav = document.querySelector('#portfolio-nav');
-// const topOfPortfolioNav = portfolioNav.offsetTop;
+//cv nav
+const cvNav = document.querySelector('#cv-nav'); 
+const topOfCvNav = cvNav.offsetTop;
 
-//     function fixPortfolioNav() {
-//         if(window.scrollY >= topOfPortfolioNav - (heightOfMainNav*4)) {
-//             document.body.classList.add('fixed-portfolioNav');
-//             document.getElementById("portfolio-nav").style.marginTop = `${heightOfMainNav*3}px`;
-//             document.getElementById("portfolio-nav-title").style.paddingLeft = '0';
-//         } else {
-//             document.body.classList.remove('fixed-portfolioNav');
-//             document.getElementById("portfolio-nav").style.marginTop = 0;
-//             document.getElementById("portfolio-nav-title").style.paddingLeft = 0;
-//         }
-//     }
-//     window.addEventListener('scroll', fixPortfolioNav);
+function fixCvNav() {
+    if(window.scrollY >= topOfCvNav - (heightOfMainNav*4)) {
+        document.body.classList.add('fixed-cvNav');
+        document.getElementById("cv-nav").style.marginTop = `${heightOfMainNav*2}px`;
+    } else {
+        document.body.style.paddingTop = 0;
+        document.body.classList.remove('fixed-cvNav');
+        document.getElementById("cv-nav").style.marginTop = 0;
+    }
+}
+window.addEventListener('scroll', fixCvNav);
+
+//portfolio nav
+const portfolioNav = document.querySelector('#portfolio-nav'); 
+const topOfPortfolioNav = portfolioNav.offsetTop;
+
+function fixPortfolioNav() {
+    if(window.scrollY >= topOfPortfolioNav - (heightOfMainNav*5)) {
+        document.body.classList.add('fixed-portfolioNav');
+        document.getElementById("portfolio-nav").style.marginTop = `${heightOfMainNav*3}px`;
+    } else {
+        document.body.style.paddingTop = 0;
+        document.body.classList.remove('fixed-portfolioNav');
+        document.getElementById("portfolio-nav").style.marginTop = 0;
+    }
+}
+window.addEventListener('scroll', fixPortfolioNav);
+
+//blog nav
+const blogNav = document.querySelector('#blog-nav'); 
+const topOfBlogNav = blogNav.offsetTop;
+
+function fixBlogNav() {
+    if(window.scrollY >= topOfBlogNav - (heightOfMainNav*5)) {
+        document.body.classList.add('fixed-blogNav');
+        document.getElementById("blog-nav").style.marginTop = `${heightOfMainNav*4}px`;
+    } else {
+        document.body.style.paddingTop = 0;
+        document.body.classList.remove('fixed-blogNav');
+        document.getElementById("blog-nav").style.marginTop = 0;
+    }
+}
+window.addEventListener('scroll', fixBlogNav);
+
+//contact nav
+const contactNav = document.querySelector('#contact-nav'); 
+const topOfContactNav = contactNav.offsetTop;
+
+function fixContactNav() {
+    if(window.scrollY >= topOfContactNav - (heightOfMainNav*5)) {
+        document.body.classList.add('fixed-contactNav');
+        document.getElementById("contact-nav").style.marginTop = `${heightOfMainNav*5}px`;
+    } else {
+        document.body.style.paddingTop = 0;
+        document.body.classList.remove('fixed-contactNav');
+        document.getElementById("contact-nav").style.marginTop = 0;
+    }
+}
+window.addEventListener('scroll', fixContactNav);
