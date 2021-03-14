@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+  }
+
+.cv {
+    /* background-color: white; */
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* the ruler */
+.cv::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: goldenrod;
+    border: 1px solid rgb(234, 132, 3);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+/* container around content */
+.container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+/* the circles on the cv */
+.container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: goldenrod;
+    border: 1px solid rgb(234, 132, 3);
+    top: 15px;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+/* containers to left */
+.left {
+    left: 0;
+}
+
+/* containers to right */
+.right {
+    left: 50%;
+}
+
+/* add arrows to left container */
+.left::before {
+    content: '';
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 2;
+    right: 30px;
+    border: medium solid rgb(234, 132, 3);
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent rgb(234, 132, 3);
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 2;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+  }
+
+  /* Add arrows to the right container (pointing left) */
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 2;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+  
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -16px;
+  }
+  
