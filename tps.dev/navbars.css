@@ -1,9 +1,10 @@
 /* main nav */
 #main-nav {
-    background-color: rgb(0,0,0);
+    background-color: none;
     top: 0;
-    color: whitesmoke;
+    color: rgb(41,41,41);
     font-size: 1.5rem;
+    font-weight: 100;
 
     position: relative;
     width: 100vw;
@@ -34,7 +35,7 @@
 #main-nav-title {
     max-width: 0;
     overflow: hidden;
-    transition: all 0s;    
+    transition: all 1s;   
 }
 
 .fixed-mainNav #main-nav a {
@@ -44,15 +45,18 @@
 
 .fixed-mainNav #main-nav {
     position: fixed;
-    background-color: rgb(255,140,0);
+    background-color: rgb(255, 140, 0);
+    color: black;
+    font-weight: 200;
 }
 
 /* about nav */
 #about-nav {
-    background-color: rgb(0,0,0);
+    background-color: none;
     top: 0;
-    color: whitesmoke;
+    color: rgb(41,41,41);
     font-size: 1.5rem;
+    font-weight: 100;
 
     position: relative;
     width: 100vw;
@@ -83,7 +87,7 @@
 #about-nav-title {
     max-width: 0;
     overflow: hidden;
-    transition: all 0s;    
+    transition: all 1s;
 }
 
 .fixed-aboutNav #about-nav a {
@@ -93,15 +97,18 @@
 
 .fixed-aboutNav #about-nav {
     position: fixed;
-    background-color: rgb(0,208,255);
+    background-color: rgb(0, 219, 15);
+    color: black;
+    font-weight: 200;
 }
 
 /* cv nav */
 #cv-nav {
-    background-color: rgb(0,0,0);
+    background-color: rgb(5,5,5);
     top: 0;
-    color: whitesmoke;
+    color: rgb(117, 84, 0);
     font-size: 1.5rem;
+    font-weight: 100;
 
     position: relative;
     width: 100vw;
@@ -132,7 +139,7 @@
 #cv-nav-title {
     max-width: 0;
     overflow: hidden;
-    transition: all 0s;    
+    transition: all 1s;
 }
 
 .fixed-cvNav #cv-nav a {
@@ -142,15 +149,18 @@
 
 .fixed-cvNav #cv-nav {
     position: fixed;
-    background-color: rgb(255,0, 217);
+    background-color:rgb(0, 212, 219);
+    color: black;
+    font-weight: 200;
 }
 
 /* portfolio nav */
 #portfolio-nav {
-    background-color: rgb(0,0,0);
+    background-color: rgb(5,5,5);
     top: 0;
-    color: whitesmoke;
+    color: rgb(117, 84, 0);
     font-size: 1.5rem;
+    font-weight: 100;
 
     position: relative;
     width: 100vw;
@@ -181,7 +191,7 @@
 #portfolio-nav-title {
     max-width: 0;
     overflow: hidden;
-    transition: all 0s;    
+    transition: all 1s;    
 }
 
 .fixed-portfolioNav #portfolio-nav a {
@@ -191,64 +201,18 @@
 
 .fixed-portfolioNav #portfolio-nav {
     position: fixed;
-    background-color: rgb(68,255,0);
-}
-
-/* blog nav */
-#blog-nav {
-    background-color: rgb(0,0,0);
-    top: 0;
-    color: whitesmoke;
-    font-size: 1.5rem;
-
-    position: relative;
-    width: 100vw;
-    z-index: 1;
-}
-
-#blog-nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-}
-
-#blog-nav li {
-    flex: 1;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.fixed-blogNav #blog-nav-title {
-    max-width: 100vw;
-    justify-content: left;
-}
-
-#blog-nav-title {
-    max-width: 0;
-    overflow: hidden;
-    transition: all 0s;    
-}
-
-.fixed-blogNav #blog-nav a {
-    max-width: 0;
-    overflow: hidden;
-}
-
-.fixed-blogNav #blog-nav {
-    position: fixed;
-    background-color: rgb(255,0,0);
+    background-color: rgb(197, 0, 219);
+    color: black;
+    font-weight: 200;
 }
 
 /* contact nav */
 #contact-nav {
-    background-color: rgb(0,0,0);
+    background-color: rgb(5,5,5);
     top: 0;
-    color: whitesmoke;
+    color: rgb(117, 84, 0);
     font-size: 1.5rem;
+    font-weight: 100;
 
     position: relative;
     width: 100vw;
@@ -279,7 +243,7 @@
 #contact-nav-title {
     max-width: 0;
     overflow: hidden;
-    transition: all 0s;    
+    transition: all 1s;    
 }
 
 .fixed-contactNav #contact-nav a {
@@ -289,4 +253,7 @@
 
 .fixed-contactNav #contact-nav {
     position: fixed;
+    background-color: rgb(219, 219, 0);
+    color: black;
+    font-weight: 200;
 }
