@@ -1,103 +1,73 @@
-* {
-    box-sizing: border-box;
+.timeline-container {
+    padding: 1vw;
   }
 
-.cv {
-    /* background-color: white; */
-    position: relative;
-    max-width: 1200px;
-    margin: 0 auto;
-}
+  .timeline-title {
+      font-weight: 100;
+      font-size: 1.5rem;
+  }
 
-/* the ruler */
-.cv::after {
+  .timeline-date {
+      font-weight: 300;
+      font-size: 2rem;
+  }
+
+  .timeline {
+    white-space: nowrap;
+    overflow-x: scroll;
+    padding: 30px 0 10px 0;
+    position: relative;
+  }
+  
+  .entry {
+    display: inline-block;
+    vertical-align: top;
+    color: rgb(235,235,235);
+    padding: 5px;
+    text-align: center;
+    position: relative;
+    border-top: 4px solid #06182E;
+    border-radius: 5px;
+    max-width: 500px;
+    white-space: pre-wrap;
+    background-color: rgb(60,60,60);
+    border: solid rgb(235,235,235) 0.5px;
+  }
+
+  
+  /* the circles on the pointers */
+  .entry:after {
     content: '';
+    display: block;
+    background: #eee;
+    width: 7px;
+    height: 7px;
+    border-radius: 6px;
+    border: 3px solid black;
     position: absolute;
-    width: 6px;
-    background-color: goldenrod;
-    border: 1px solid rgb(234, 132, 3);
-    top: 0;
-    bottom: 0;
     left: 50%;
-    margin-left: -3px;
-}
-
-/* container around content */
-.container {
-    padding: 10px 40px;
-    position: relative;
-    background-color: inherit;
-    width: 50%;
-}
-
-/* the circles on the cv */
-.container::after {
+    top: -30px;
+    margin-left: -6px;
+  }
+  
+  /* the pointer */
+  .entry:before {
     content: '';
+    display: block;
+    background: black;
+    width: 5px;
+    height: 20px;
     position: absolute;
-    width: 25px;
-    height: 25px;
-    right: -17px;
-    background-color: goldenrod;
-    border: 1px solid rgb(234, 132, 3);
-    top: 15px;
-    border-radius: 50%;
-    z-index: 2;
-}
-
-/* containers to left */
-.left {
+    left: 50%;
+    top: -20px;
+    margin-left: -2px;
+  }
+    
+  .timeline-bar {
+    height: 4px;
+    background: #eee;
+    width: 100%;
+    position: relative;
+    top: 13px;
     left: 0;
-}
-
-/* containers to right */
-.right {
-    left: 50%;
-}
-
-/* add arrows to left container */
-.left::before {
-    content: '';
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 2;
-    right: 30px;
-    border: medium solid rgb(234, 132, 3);
-    border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent rgb(234, 132, 3);
-}
-
-/* Add arrows to the left container (pointing right) */
-.left::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 2;
-    right: 30px;
-    border: medium solid white;
-    border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent white;
   }
-
-  /* Add arrows to the right container (pointing left) */
-.right::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 2;
-    left: 30px;
-    border: medium solid white;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
-  }
-  
-  /* Fix the circle for containers on the right side */
-  .right::after {
-    left: -16px;
-  }
-  
