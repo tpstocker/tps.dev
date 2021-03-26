@@ -22,6 +22,16 @@ h1 {
     margin: 0;
 }
 
+
+#s-about {
+    height: 100vh;
+}
+
+#s-cv {
+    height: 100vh;
+}
+
 #s-contact {
     text-align: center;
+    height: 100vh;
 }
