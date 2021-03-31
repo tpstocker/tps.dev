@@ -1,0 +1,67 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+.splash-screen {
+    background-color: none;
+    color: rgb(41,41,41);
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+}
+
+header {
+    height: 1px;
+    background-color: rgb(60,60,60);
+}
+
+h1 {
+    margin: 0;
+}
+
+
+#s-about {
+    height: 100vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+#s-about h1 {
+    padding-left: 1vw;
+    padding-top: 1vh;
+    padding-bottom: 2vh;
+    word-spacing: 1rem;
+}
+
+#s-about p {
+    padding-left: 1vw;
+    padding-right: 1vw;
+    word-spacing: 0.2rem;
+    text-align: justify;
+    font-size: larger;
+}
+
+#s-cv {
+    height: 100vh;
+}
+
+#s-contact {
+    padding-top: 60vh;
+    height: 40vh;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#s-contact p {
+    font-size: 1.5rem;
+    padding: 0;
+    margin: 0;
+}
+
+#github-logo, #li-logo {
+    height: 5vh;
+}
